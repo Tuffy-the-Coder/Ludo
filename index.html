@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+        <div class="ludo-container">
+
+            <!-- player actions (red & green)-->
+
+            <div class="player-area">
+
+                <div class="player-actions" id="red-player-actions">
+                    <div class="dice-box">dice</div>
+                    <div class="meme-box">meme</div>
+                    <div class="meme-box">meme</div>
+                    <div class="meme-box">meme</div>
+                    <div class="meme-box">meme</div>
+                </div>
+
+                <div class="player-actions" id="green-player-actions">
+                    <div class="dice-box">dice</div>
+                    <div class="meme-box">meme</div>
+                    <div class="meme-box">meme</div>
+                    <div class="meme-box">meme</div>
+                    <div class="meme-box">meme</div>
+                </div>
+
+            </div> 
+
+            <!-- upper board ( red & green lobby + movement area)-->
+
+            <div class="RG-area">
+
+                <div class="player-lobby" id="red-lobby">
+                    <div class="pieces-area" id="red-pieces-area">
+                        <div class="red-piece-box">1</div>
+                        <div class="red-piece-box">2</div>
+                        <div class="red-piece-box">3</div>
+                        <div class="red-piece-box">4</div>
+                    </div>
+                </div>
+
+                <table class="movement-area" id="green-wining-area">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="green-carpet"></td>
+                        <td class="green-carpet"> <i class="fa-solid fa-star"></i></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-star"></i></td>
+                        <td class="green-carpet"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="green-carpet"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="green-carpet"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="green-carpet"></td>
+                        <td></td>
+                    </tr>
+                </table>
+
+                <div class="player-lobby" id="green-lobby">
+                    <div class="pieces-area" id="green-pieces-area">
+                        <div class="green-piece-box">1</div>
+                        <div class="green-piece-box">2</div>
+                        <div class="green-piece-box">3</div>
+                        <div class="green-piece-box">4</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- middle board (winner hall + movement area)-->
+
+            <div class="center-of-board">
+
+                <table class="movement-area" id="red-wining-area">
+                    <tr>
+                        <td></td>
+                        <td class="red-carpet"> <i class="fa-solid fa-star"></i></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="red-carpet"></td>
+                        <td class="red-carpet"></td>
+                        <td class="red-carpet"></td>
+                        <td class="red-carpet"></td>
+                        <td class="red-carpet"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><i class="fa-solid fa-star"></i></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+
+                <div class="hall-of-frame">
+                    
+                </div>
+
+                <table class="movement-area" id="red-wining-area">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><i class="fa-solid fa-star"></i></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="yellow-carpet"></td>
+                        <td class="yellow-carpet"></td>
+                        <td class="yellow-carpet"></td>
+                        <td class="yellow-carpet"></td>
+                        <td class="yellow-carpet"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="yellow-carpet"><i class="fa-solid fa-star"></i></td>
+                        <td></td>
+                    </tr>
+                </table>
+
+
+            </div>
+
+            <!-- lower board ( blue & yellow lobby + movement area)-->
+
+            <div class="BY-area">
+
+
+                <div class="player-lobby" id="blue-lobby">
+
+                    <div class="pieces-area" id="blue-pieces-area">
+                        <div class="blue-piece-box">1</div>
+                        <div class="blue-piece-box">2</div>
+                        <div class="blue-piece-box">3</div>
+                        <div class="blue-piece-box">4</div>
+                    </div>
+
+                </div>
+
+                <table class="movement-area" id="blue-wining-area">
+                    <tr>
+                        <td></td>
+                        <td class="blue-carpet"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="blue-carpet"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="blue-carpet"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="blue-carpet"></td>
+                        <td><i class="fa-solid fa-star"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="blue-carpet"><i class="fa-solid fa-star"></i></td>
+                        <td class="blue-carpet"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+
+                <div class="player-lobby" id="yellow-lobby">
+
+                    <div class="pieces-area" id="yellow-pieces-area">
+                        <div class="yellow-piece-box">1</div>
+                        <div class="yellow-piece-box">2</div>
+                        <div class="yellow-piece-box">3</div>
+                        <div class="yellow-piece-box">4</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- player actions (blue & yellow)-->
+
+            <div class="player-area">
+
+                
+                <div class="player-actions" id="blue-player-actions">
+                    <div class="dice-box">dice</div>
+                    <div class="meme-box">meme</div>
+                    <div class="meme-box">meme</div>
+                    <div class="meme-box">meme</div>
+                    <div class="meme-box">meme</div>
+                </div>
+
+                <div class="player-actions" id="yellow-player-actions">
+                    <div class="dice-box">dice</div>
+                    <div class="meme-box">meme</div>
+                    <div class="meme-box">meme</div>
+                    <div class="meme-box">meme</div>
+                    <div class="meme-box">meme</div>
+                </div>
+
+            </div> 
+
+        </div>            
+</body>
+</html>
