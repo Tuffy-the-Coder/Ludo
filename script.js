@@ -1,5 +1,5 @@
 
-// playng memes
+// playing memes
 
 document.querySelectorAll(".meme").forEach((e) => {
     e.addEventListener("mousedown", (event) => {

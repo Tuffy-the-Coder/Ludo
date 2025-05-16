@@ -162,34 +162,42 @@ body {
 
 .red-piece-box {
     background-color: red;
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
     border-radius: 5px;
     margin: 15px;
+    text-align: center;
+    align-content: center;
 }
 
 .green-piece-box {
     background-color: green;
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
     border-radius: 5px;
     margin: 15px;
+    text-align: center;
+    align-content: center;
 }
 
 .blue-piece-box {
     background-color: blue;
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
     border-radius: 5px;
     margin: 15px;
+    text-align: center;
+    align-content: center;
 }
 
 .yellow-piece-box {
     background-color: yellow;
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
     border-radius: 5px;
     margin: 15px;
+    text-align: center;
+    align-content: center;
 }
 
 #red-lobby {
@@ -208,6 +216,16 @@ body {
     background-color: yellow;
 }
 
+.piece {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+.piece:hover {
+    transform: translateY(-3px);
+    scale: 1.5;
+}
+
 /* movement area  */
 
 td {
@@ -219,6 +237,7 @@ td {
     color: white;
     font-size: 20px;
     text-align: center;
+    align-content: center;
 }
 
 .red-carpet {
